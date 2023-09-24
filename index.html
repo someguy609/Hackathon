@@ -1,93 +1,106 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">  
-    <title>Pojok Jatirogo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-    <script src="https://kit.fontawesome.com/c3e9afa8ed.js" crossorigin="anonymous"></script>
-</head> 
-<body> 
-<section class="header" id="header-home">
-        <nav>
-            <a href="index.html"><img src=" logoheader.png" class="main"></a>
-            <div class="nav-links" id="navLinks">
-               <i class="fas fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">BERANDA</a></li>
-                    <li><a href="Pjek.html">P-JEK</a></li>
-                    <li><a href="Tour.html">TOUR</a></li>
-                    <li><a href="Digiplan.html">DIGIPLAN</a></li>
-                    <li><a href="Pojokpeduli.html">POJOK PEDULI</a></li>
-                </ul>
-            </div>
-            <i class="fas fa-bars" onclick="showMenu()"></i>
-        </nav>
-        
-</section>
-<section class="news">
-    <h1>Berita</h1>
-    <div class="scroll-container">
-        <img src=" pp1.jpg">
-        <img src=" pp2.jpg">
-        <img src=" pp3.jpg">
-        <img src=" pp4.jpg">
-        <img src=" pp5.jpg">
-        <img src=" pp6.jpg">
-    </div>
-    <a class="hero-btn" href="Pojokpeduli.html"><h3>Berita Lainnya..</h3></a>
-</section>
-  <section class="product">
-      <h1>Produk Kami</h1>
-      <div class="row">
-          <div class="product-col"><a href="Pjek.html">
-              <img src=" pjek.png">
-              <div class="layer">
-                  <h3>P-JEK</h3>
-              </div>
-          </a></div>
-          <div class="product-col"><a href="Tour.html">
-              <img src=" logoheader.png">
-              <div class="layer">
-                  <h3>Tour</h3>
-              </div>
-          </a></div>
-          <div class="product-col"><a href="Digiplan.html">
-              <img src=" digiplan.png">
-              <div class="layer">
-                  <h3>DIGIPLAN</h3>
-              </div>
-          </a></div>
-      </div>
+	<head>
+		<meta name="viewport" content="with=device-width, initial-scale=1.0" />
+		<title>Pojok Jatirogo</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+		/>
+		<script
+			src="https://kit.fontawesome.com/c3e9afa8ed.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<section class="header" id="header-home">
+			<nav>
+				<a href="index.html"
+					><img src=" logoheader.png" class="main"
+				/></a>
+				<div class="nav-links" id="navLinks">
+					<i class="fas fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="index.html">BERANDA</a></li>
+						<li><a href="Pjek.html">P-JEK</a></li>
+						<li><a href="Tour.html">TOUR</a></li>
+						<li><a href="Digiplan.html">DIGIPLAN</a></li>
+						<li><a href="Pojokpeduli.html">POJOK PEDULI</a></li>
+					</ul>
+				</div>
+				<i class="fas fa-bars" onclick="showMenu()"></i>
+			</nav>
+		</section>
+		<section class="news">
+			<h1>Berita</h1>
+			<div class="scroll-container">
+				<img src=" pp1.jpg" />
+				<img src=" pp2.jpg" />
+				<img src=" pp3.jpg" />
+				<img src=" pp4.jpg" />
+				<img src=" pp5.jpg" />
+				<img src=" pp6.jpg" />
+			</div>
+			<a class="hero-btn" href="Pojokpeduli.html"
+				><h3>Berita Lainnya..</h3></a
+			>
+		</section>
+		<section class="product">
+			<h1>Produk Kami</h1>
+			<div class="row">
+				<div class="product-col">
+					<a href="Pjek.html">
+						<img src=" pjek.png" />
+						<div class="layer">
+							<h3>P-JEK</h3>
+						</div>
+					</a>
+				</div>
+				<div class="product-col">
+					<a href="Tour.html">
+						<img src="tour.png" />
+						<div class="layer">
+							<h3>Tour</h3>
+						</div>
+					</a>
+				</div>
+				<div class="product-col">
+					<a href="Digiplan.html">
+						<img src=" digiplan.png" />
+						<div class="layer">
+							<h3>DIGIPLAN</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
 
-  </section>
-  
-  <!----- Footer ----->
-  
-  <section class="footer">
-    <h4>Media Sosial</h4>
-    <div class="icons">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-    </div>
-    <p>Copyright © Tim Serenity 2023</p>
-</section>
-  
-  
-<!--------Javascript for Toogle Menu------->  
-<script>
-    
-    var navLinks = document.getElementById("navLinks")
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-    
-</script>
+		<!----- Footer ----->
 
-</body>
+		<section class="footer">
+			<h4>Media Sosial</h4>
+			<div class="icons">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+			</div>
+			<p>Copyright © Tim Serenity 2023</p>
+		</section>
+
+		<!--------Javascript for Toogle Menu------->
+		<script>
+			var navLinks = document.getElementById("navLinks");
+			function showMenu() {
+				navLinks.style.right = "0";
+			}
+			function hideMenu() {
+				navLinks.style.right = "-200px";
+			}
+		</script>
+	</body>
 </html>

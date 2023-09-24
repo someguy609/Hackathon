@@ -1,186 +1,253 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">  
-    <title>Pojok Jatirogo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/c3e9afa8ed.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<head>
+		<meta name="viewport" content="with=device-width, initial-scale=1.0" />
+		<title>Pojok Jatirogo</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/c3e9afa8ed.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<script type="module" src="purchases.js"></script>
+	</head>
+	<body>
+		<section class="header" id="header-digiplan">
+			<nav>
+				<a href="index.html"><img src="digiplan.png" class="main" /></a>
+				<div class="nav-links" id="navLinks">
+					<i class="fas fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="index.html">BERANDA</a></li>
+						<li><a href="Pjek.html">P-JEK</a></li>
+						<li><a href="Tour.html">TOUR</a></li>
+						<li><a href="Digiplan.html">DIGIPLAN</a></li>
+						<li><a href="Pojokpeduli.html">POJOK PEDULI</a></li>
+					</ul>
+				</div>
+				<i class="fas fa-bars" onclick="showMenu()"></i>
+			</nav>
+		</section>
+		<section class="digiplan-desc">
+			<p>
+				DIGIPLAN adalah salah satu layanan Pojok Jatirogo dalam bidang
+				Jasa Edukasi. Berfokus untuk memberikan pelatihan terkait jual
+				beli online dan memperkenalkan produk costumer secara online di
+				media sosial kami yang mencakup dari P-JEK. Diantaranya yaitu,
+				Facebook, Instagram, dan Story WhatsApp.
+			</p>
+		</section>
+		<section class="digi-product">
+			<div class="digi-scroll">
+				<div class="digi-paket">
+					<div class="digi-box">
+						<!-- <p>PAKET 🅰</p> -->
+						<p>PAKET A</p>
+						<s>Rp.300.000</s>
+						<p>Rp.200.000</p>
+						<!-- <p>
+							▶ Konsultasi digital marketing produk, branding dan
+							selling
+						</p>
+						<p>▶ Disiplin posting by admin</p> -->
+						<p>
+							Konsultasi digital marketing produk, branding, dna
+							selling
+						</p>
+						<p>Disiplin posting by admin</p>
+						<p>- Facebook story & beranda</p>
+						<p>- Whatsapp admin P-jek</p>
+						<p>- Instagram</p>
+						<!-- <p>▶ Pamflet dan design logo</p> -->
+						<p>Pamflet dan design logo</p>
+					</div>
+					<div class="digi-box">
+						<!-- <p>PAKET 🅱</p> -->
+						<p>PAKET B</p>
+						<s>Rp.450.000</s>
+						<p>Rp.350.000</p>
+						<!-- <p>▶ Konsultasi digital marketing produk</p>
+                <p>▶Disiplin posting by admin</p> -->
+						<p>Konsultasi digital marketing produk</p>
+						<p>Disiplin posting by admin</p>
+						<p>- Facebook story & beranda</p>
+						<p>- Whatsapp admin P-Jek</p>
+						<p>- Instagram</p>
+						<!-- <p>▶Pamflet dan design logo</p> -->
+						<p>Pamflet dan design logo</p>
+						<p>-Profil usaha</p>
+						<p>-Lokasi usaha</p>
+						<!-- <p>▶Videografi</p> -->
+						<p>Videografi</p>
+						<p>- Durasi 30 detik</p>
+						<p>- Durasi 60 detik</p>
+						<p>&nbsp;&nbsp;&nbsp;Atau sesuai request.</p>
+					</div>
+				</div>
+				<section class="digi-info">
+					<p>
+						Untuk program perpanjangan bulan berikutnya akan
+						dikenakan harga -Paket A 150.000 -Paket B 200.000
+					</p>
+				</section>
+			</div>
+			<div class="container-form">
+				<div class="digi-form">
+					<div>
+						<label for="produk">Produk:</label>
+					</div>
+					<div>
+						<input
+							type="text"
+							id="produk"
+							name="produk"
+							placeholder="Produk Anda.."
+						/>
+					</div>
+					<div>
+						<label for="produk-unggulan">Produk Unggulan:</label>
+					</div>
+					<div>
+						<input
+							type="text"
+							id="produk-unggulan"
+							name="produk-unggulan"
+							placeholder="Produk Unggulan Anda.."
+						/>
+					</div>
+					<div>
+						<div>
+							<label for="nama-toko">Nama Toko:</label>
+						</div>
+						<div>
+							<input
+								type="text"
+								id="nama-toko"
+								name="nama-toko"
+								placeholder="Nama Toko Anda.."
+							/>
+						</div>
+						<div>
+							<label for="motto">Motto:</label>
+						</div>
+						<div>
+							<input
+								type="text"
+								id="motto"
+								name="motto"
+								placeholder="Motto Anda.."
+							/>
+						</div>
+						<div>
+							<label for="alamat">Alamat:</label>
+						</div>
+						<div>
+							<input
+								type="text"
+								id="alamat"
+								name="alamat"
+								placeholder="Alamat Anda.."
+							/>
+						</div>
+						<label for="pesanan">Pesanan Anda:</label>
+					</div>
+					<div class="select-btn">
+						<span class="btn-text">Pilihan Paket</span>
+						<span class="arrow-dwn">
+							<i class="fa-solid fa-chevron-down"></i>
+						</span>
+					</div>
+					<ul class="list-items">
+						<li class="item">
+							<span class="checkbox">
+								<i class="fa-solid fa-check check-icon"></i>
+							</span>
+							<!-- <span class="item-text">Paket 🅰</span> -->
+							<span class="item-text">Paket A</span>
+						</li>
+						<li class="item">
+							<span class="checkbox">
+								<i class="fa-solid fa-check check-icon"></i>
+							</span>
+							<!-- <span class="item-text">PAKET 🅱</span> -->
+							<span class="item-text">Paket B</span>
+						</li>
+					</ul>
+				</div>
+				<div class="subm">
+					<input id="submit" type="submit" value="Submit" />
+				</div>
+			</div>
+		</section>
+		<!----- Footer ----->
 
-</head> 
-<body> 
-<section class="header" id="header-digiplan">
-        <nav>
-            <a href="index.html"><img src="digiplan.png" class="main"></a>
-            <div class="nav-links" id="navLinks">
-               <i class="fas fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">BERANDA</a></li>
-                    <li><a href="Pjek.html">P-JEK</a></li>
-                    <li><a href="Tour.html">TOUR</a></li>
-                    <li><a href="Digiplan.html">DIGIPLAN</a></li>
-                    <li><a href="Pojokpeduli.html">POJOK PEDULI</a></li>
-                </ul>
-            </div>
-            <i class="fas fa-bars" onclick="showMenu()"></i>
-        </nav>
-        
-</section>
-<section class="digiplan-desc">
-    <p>DIGIPLAN adalah salah satu layanan Pojok Jatirogo dalam bidang Jasa Edukasi. 
-        Berfokus untuk memberikan pelatihan terkait jual beli online dan memperkenalkan
-        produk costumer secara online di media sosial kami yang mencakup dari P-JEK. 
-        Diantaranya yaitu, Facebook, Instagram, dan Story WhatsApp.
-    </p>
-</section>
-<section class="digi-product">
-    <div class="digi-scroll">
-        <div class="digi-paket">
-            <div class="digi-box">
-                <p>PAKET 🅰</p>
-                <s>Rp.300.000</s>
-                <p>Rp.200.000</p>
-                <p>▶ Konsultasi digital marketing produk, branding dan selling</p>
-                <p>▶ Disiplin posting by admin </p>
-                <p>-  Facebook story & beranda</p>
-                <p>-  Whatsapp admin P-jek </p>
-                <p>-  Instagram</p>
-                <p>▶ Pamflet dan design logo </p>
-            </div>
-            <div class="digi-box">
-                <p>PAKET 🅱</p>
-                <s>Rp.450.000</s> 
-                <p>Rp.350.000</p>
-                <p>▶ Konsultasi digital marketing produk</p>
-                <p>▶Disiplin posting by admin</p>
-                <p>- Facebook story & beranda</p>
-                <p>- Whatsapp admin P-Jek </p>
-                <p>- Instagram</p>
-                <p>▶Pamflet dan design logo</p>
-                <p>-Profil usaha</p>
-                <p>-Lokasi usaha</p>
-                <p>▶Videografi</p>
-                <p>- Durasi 30 detik</p>
-                <p>- Durasi 60 detik</p>
-                <p>&nbsp;&nbsp;&nbsp;Atau sesuai request.</p>
-            </div>
-        </div>
-            <section class="digi-info">
-                <p>Untuk program perpanjangan bulan berikutnya akan dikenakan harga
-                    -Paket A 150.000
-                    -Paket B 200.000
-                    </p>
-            </section>
-    </div>
-    <div class="container-form">
-        <div class="digi-form">
-            <div>
-                <label for="produk">Produk:</label>
-            </div>
-            <div>
-                <input type="text" id="produk" name="produk" placeholder="Produk Anda..">
-            </div>
-            <div>
-                <label for="produk-unggulan">Produk Unggulan:</label>
-            </div>
-            <div>
-                <input type="text" id="produk-unggulan" name="produk-unggulan" placeholder="Produk Unggulan Anda..">
-            </div>
-            <div>
-            <div>
-                <label for="nama-toko">Nama Toko:</label>
-            </div>
-            <div>
-                <input type="text" id="nama-toko" name="nama-toko" placeholder="Nama Toko Anda..">
-            </div>
-            <div>
-                <label for="motto">Motto:</label>
-            </div>
-            <div>
-                <input type="text" id="motto" name="motto" placeholder="Motto Anda..">
-            </div>
-            <div>
-                <label for="alamat">Alamat:</label>
-            </div>
-            <div>
-                <input type="text" id="alamat" name="alamat" placeholder="Alamat Anda..">
-            </div>
-                <label for="pesanan">Pesanan Anda:</label>
-            </div>
-            <div class="select-btn">
-                <span class="btn-text">Pilihan Paket</span>
-                <span class="arrow-dwn">
-                    <i class="fa-solid fa-chevron-down"></i>
-                </span>
-            </div>
-            <ul class="list-items">
-                <li class="item">
-                    <span class="checkbox">
-                        <i class="fa-solid fa-check check-icon"></i>
-                    </span>
-                    <span class="item-text">Paket 🅰</span>
-                </li>
-                <li class="item">
-                    <span class="checkbox">
-                        <i class="fa-solid fa-check check-icon"></i>
-                    </span>
-                    <span class="item-text">PAKET 🅱</span>
-                </li>
-              </ul>
-            </div>
-          <div class="subm">
-            <input type="submit" value="Submit">
-          </div>
-      </div>
-</section>
-  <!----- Footer ----->
-  
-  <section class="footer">
-    <h4>Media Sosial</h4>
-    <div class="icons">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-    </div>
-    <p>Copyright © Tim Serenity 2023</p>
-</section>
-  
-  
-<!--------Javascript for Toogle Menu------->  
-<script>
-    
-    var navLinks = document.getElementById("navLinks")
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-</script>
- <!-- JavaScript -->
-    <script>const selectBtn = document.querySelector(".select-btn"),
-      items = document.querySelectorAll(".item");
-  
-  selectBtn.addEventListener("click", () => {
-    selectBtn.classList.toggle("open");
-  });
-  
-  items.forEach(item => {
-    item.addEventListener("click", () => {
-        item.classList.toggle("checked");
-  
-        let checked = document.querySelectorAll(".checked"),
-            btnText = document.querySelector(".btn-text");
-  
-            if(checked && checked.length > 0){
-                btnText.innerText = `${checked.length} Dipilih`;
-            }else{
-                btnText.innerText = "Select Language";
-            }
-    });
-  })</script>
-    
-    
-</body>
+		<section class="footer">
+			<h4>Media Sosial</h4>
+			<div class="icons">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+			</div>
+			<p>Copyright © Tim Serenity 2023</p>
+		</section>
+
+		<!--------Javascript for Toogle Menu------->
+		<script>
+			var navLinks = document.getElementById("navLinks");
+			function showMenu() {
+				navLinks.style.right = "0";
+			}
+			function hideMenu() {
+				navLinks.style.right = "-200px";
+			}
+		</script>
+		<!-- JavaScript -->
+		<script>
+			const selectBtn = document.querySelector(".select-btn"),
+				items = document.querySelectorAll(".item");
+
+			selectBtn.addEventListener("click", () => {
+				selectBtn.classList.toggle("open");
+			});
+
+			items.forEach((item) => {
+				item.addEventListener("click", () => {
+					item.classList.toggle("checked");
+
+					let checked = document.querySelectorAll(".checked"),
+						btnText = document.querySelector(".btn-text");
+
+					if (checked && checked.length > 0) {
+						btnText.innerText = `${checked.length} Dipilih`;
+					} else {
+						btnText.innerText = "Select Language";
+					}
+				});
+			});
+
+			// async function handle_purchases() {
+			// 	let produk = document.getElementById("produk");
+			// 	let produk_unggulan =
+			// 		document.getElementById("produk-unggulan");
+			// 	let nama_toko = document.getElementById("nama-toko");
+			// 	let motto = document.getElementById("motto");
+			// 	let alamat = document.getElementById("alamat");
+			// 	await save_purchases({
+			// 		produk: produk.value,
+			// 		produk_unggulan: produk_unggulan.value,
+			// 		nama_toko: nama_toko.value,
+			// 		motto: motto.value,
+			// 		pesanan: [items[0].value, items[1].value],
+			// 	});
+			// 	window.location = "index.html";
+			// }
+		</script>
+	</body>
 </html>

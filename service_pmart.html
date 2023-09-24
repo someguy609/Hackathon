@@ -1,77 +1,92 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">  
-    <title>Pojok Jatirogo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/c3e9afa8ed.js" crossorigin="anonymous"></script>
-</head> 
-<body> 
-<section class="header" id="header-pmart">
-    <nav>
-        <a href="index.html"><img src="logoheaderpjek.png" class="main"></a>
-        <div class="nav-links" id="navLinks">
-            <i class="fas fa-times" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="index.html">BERANDA</a></li>
-                <li><a href="Pjek.html">P-JEK</a></li>
-                <li><a href="Tour.html">TOUR</a></li>
-                <li><a href="Digiplan.html">DIGIPLAN</a></li>
-                <li><a href="Pojokpeduli.html">POJOK PEDULI</a></li>
-            </ul>
-        </div>
-        <i class="fas fa-bars" onclick="showMenu()"></i>
-    </nav>
-</section>
-<section class="servis">
-    <h1>P-Mart</h1>
-    <div class="row">
-            <img src="eko1.jpg" class="eko">
-            <img src="eko2.jpg" class="eko">
-            <img src="eko3.jpg" class="eko">
-            <div class="container-form">
-                <div class="rows-form">
-                    <div class="col-form">
-                      <label for="pesanan">Pesanan Anda:</label>
-                    </div>
-                    <div class="col-form">
-                      <textarea id="pesanan" name="pesanan" placeholder="Ketik Pesanan Anda.." style="height:200px"></textarea>
-                    </div>
-                  </div>
-                  <div class="submit-btn-mid">
-                    <input type="submit" value="Submit">
-                  </div>
-              </div>
-    </div>
-</section>
+	<head>
+		<meta name="viewport" content="with=device-width, initial-scale=1.0" />
+		<title>Pojok Jatirogo</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script type="module" src="purchases.js" />
+		<script
+			src="https://kit.fontawesome.com/c3e9afa8ed.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<section class="header" id="header-pmart">
+			<nav>
+				<a href="index.html"
+					><img src="logoheaderpjek.png" class="main"
+				/></a>
+				<div class="nav-links" id="navLinks">
+					<i class="fas fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="index.html">BERANDA</a></li>
+						<li><a href="Pjek.html">P-JEK</a></li>
+						<li><a href="Tour.html">TOUR</a></li>
+						<li><a href="Digiplan.html">DIGIPLAN</a></li>
+						<li><a href="Pojokpeduli.html">POJOK PEDULI</a></li>
+					</ul>
+				</div>
+				<i class="fas fa-bars" onclick="showMenu()"></i>
+			</nav>
+		</section>
+		<section class="servis">
+			<h1>P-Mart</h1>
+			<div class="row">
+				<img src="eko1.jpg" class="eko" />
+				<img src="eko2.jpg" class="eko" />
+				<img src="eko3.jpg" class="eko" />
+				<div class="container-form">
+					<div class="rows-form">
+						<div class="col-form">
+							<label for="pesanan">Pesanan Anda:</label>
+						</div>
+						<div class="col-form">
+							<textarea
+								id="pesanan"
+								name="pesanan"
+								placeholder="Ketik Pesanan Anda.."
+								style="height: 200px"
+							></textarea>
+						</div>
+					</div>
+					<div class="submit-btn-mid">
+						<input type="submit" value="Submit" onclick="" />
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <!----- Footer ----->
-  
-  <section class="footer">
-      <h4>Media Sosial</h4>
-      <div class="icons">
-                  <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-      </div>
-      <p>Copyright © Tim Serenity 2023</p>
-  </section>
-  
-  
-<!--------Javascript for Toogle Menu------->  
-<script>
-    
-    var navLinks = document.getElementById("navLinks")
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-    
-</script>
-    
-    
-</body>
+		<!----- Footer ----->
+
+		<section class="footer">
+			<h4>Media Sosial</h4>
+			<div class="icons">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+			</div>
+			<p>Copyright © Tim Serenity 2023</p>
+		</section>
+
+		<!--------Javascript for Toogle Menu------->
+		<script>
+			var navLinks = document.getElementById("navLinks");
+			function showMenu() {
+				navLinks.style.right = "0";
+			}
+			function hideMenu() {
+				navLinks.style.right = "-200px";
+			}
+			async function handle_purchases() {
+				await handle_purchases({
+					details: document.getElementById("pesanan"),
+				});
+				window.location = "index.html";
+			}
+		</script>
+	</body>
 </html>

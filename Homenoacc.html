@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     <script src="https://kit.fontawesome.com/c3e9afa8ed.js" crossorigin="anonymous"></script>
+    <script src="./accounts.js"></script>
 </head> 
 <body> 
 <section class="header" id="header-home">
@@ -67,11 +68,11 @@
       <h1>Masuk</h1>
   
       <label for="telp"><b>No Telpon</b></label>
-      <input type="text" placeholder="Masukkan Nomor Telpon" name="telp" required>
+      <input id="no-telp-login" type="text" placeholder="Masukkan Nomor Telpon" name="telp" required>
       <label for="psw"><b>Kata Sandi</b></label>
-      <input type="password" placeholder="Masukkan Kata Sandi" name="psw" required>
+      <input id="pwd-login" type="password" placeholder="Masukkan Kata Sandi" name="psw" required>
       <p>Belum punya akun? <button type="button" onclick="closeForm1(); openForm2()">Daftar</a></button>
-      <button type="submit" class="btn" id="redirectButton">Masuk</button>
+      <button type="submit" class="btn" id="redirectButton" onclick="login()">Masuk</button>
       <button type="button" class="btn cancel" onclick="closeForm1()">Tutup</button>
     </form>
   </div>
@@ -81,13 +82,13 @@
       <h1>Daftar</h1>
   
       <label for="nama"><b>Nama</b></label>
-      <input type="text" placeholder="Masukkan Nama" name="nama" required>
+      <input id="nama-daftar" type="text" placeholder="Masukkan Nama" name="nama" required>
       <label for="telp"><b>No Telpon</b></label>
-      <input type="text" placeholder="Masukkan Nomor Telpon" name="telp" required>
+      <input id="no-telp-daftar" type="text" placeholder="Masukkan Nomor Telpon" name="telp" required>
       <label for="psw"><b>Kata Sandi</b></label>
-      <input type="password" placeholder="Masukkan Kata Sandi" name="psw" required>
+      <input id="password-daftar" type="password" placeholder="Masukkan Kata Sandi" name="psw" required>
       <p>Sudah punya akun? <button type="button" onclick="closeForm2(); openForm1()">Masuk</a></button>
-      <button type="submit" class="btn">Daftar</button>
+      <button type="submit" class="btn" onclick="register()">Daftar</button>
       <button type="button" class="btn cancel" onclick="closeForm2()">Tutup</button>
     </form>
   </div>
